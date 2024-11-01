@@ -14,7 +14,7 @@ prompt_template = ChatPromptTemplate.from_messages(
 
 # print(prompt_template.invoke({'language':'urdu', 'text':'hello'}))
 
-model = ChatGroq(api_key="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")
+model = ChatGroq(api_key="--------------")
 parser = StrOutputParser()
 
 chain = prompt_template | model | parser
